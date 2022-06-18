@@ -1,0 +1,5 @@
+description: Unauthorized access, invalid credentials were used.
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/problem-types/unauthorized.yaml

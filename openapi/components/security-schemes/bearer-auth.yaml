@@ -1,0 +1,6 @@
+description: |
+  **Important:** Never share your secret keys. Keep them guarded and secure.
+  Use your secret API key to make requests from the server side.
+  To authenticate the Returnless API, provide your secret key a the bearer token in the authorization header.
+type: http
+scheme: bearer

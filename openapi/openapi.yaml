@@ -1,0 +1,27 @@
+openapi: 3.0.0
+
+info:
+  version: 2.0.0
+  title: "Returnless API"
+  contact:
+    name: "Returnless Support"
+    url: "https://returnless.com/contact"
+    email: "support@returnless.com"
+
+servers:
+  - url: "https://api.returnless.co"
+
+components:
+  securitySchemes:
+    BearerAuth:
+      $ref: ./components/security-schemes/bearer-auth.yaml
+
+security:
+  - BearerAuth: []
+
+tags:
+  - name: Search
+
+paths:
+  /search:
+    $ref: ./paths/search.yaml

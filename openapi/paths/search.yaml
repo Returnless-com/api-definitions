@@ -1,0 +1,28 @@
+get:
+  tags:
+    - Search
+  summary: Search panel data
+  operationId: GetSearch
+  description: >
+    Search for data within your Returnless panel. This includes resources such as customers, return-orders, products,
+    integrations, users.
+  parameters:
+    - name: query
+      in: query
+      required: true
+      description: It will search across resources and many fields.
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Results keyed by resource
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/search.yaml
+    '401':
+      $ref: ../components/responses/unauthorized.yaml
+    '403':
+      $ref: ../components/responses/forbidden.yaml
