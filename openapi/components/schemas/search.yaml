@@ -1,9 +1,20 @@
 type: object
 properties:
-  customers:
-    description: List of returned customers.
+  resource_type:
+    description: The type of the resource.
+    type: string
+  id:
+    description: The customer identifier string.
     readOnly: true
-    type: array
-    items:
-      allOf:
-        - $ref: ./customer-resource.yaml
+    allOf:
+      - $ref: ./resource-id.yaml
+  url:
+    description: The URL to the resource.
+    type: string
+  label:
+    description: The label of the resource.
+    type: string
+  created_at:
+    description: The timestamp the resource is created at.
+    type: string
+    format: timestamp

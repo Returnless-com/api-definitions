@@ -1,9 +1,0 @@
-type: object
-properties:
-  id:
-    description: The customer identifier string.
-    readOnly: true
-    allOf:
-      - $ref: ./resource-id.yaml
-  resource_type:
-    description: The type of the resource

@@ -19,9 +19,12 @@ get:
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: ../components/schemas/search.yaml
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: ../components/schemas/search.yaml
     '401':
       $ref: ../components/responses/unauthorized.yaml
     '403':
