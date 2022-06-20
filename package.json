@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "speccy": "speccy resolve spec/openapi.yaml -o spec/output.yaml",
-    "readme": "@speccy && rdme openapi spec/output.yaml --key=rdme_xn8s9h033ba23db67c36d861a90d897f301e847cef51e431ed8e8dc8d84c63ede35a6b --id=6273838e3761f6003a0ff242"
+    "readme": "@speccy && rdme openapi spec/output.yaml"
   },
   "dependencies": {
     "rdme": "^7.2.0",
