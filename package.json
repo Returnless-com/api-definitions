@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "speccy": "speccy resolve spec/openapi.yaml -o spec/output.yaml",
-    "readme": "@speccy && rdme openapi spec/output.yaml"
+    "speccy": "speccy resolve openapi/openapi.yaml -o openapi/output.yaml",
+    "readme": "@speccy && rdme openapi openapi/output.yaml"
   },
   "dependencies": {
     "rdme": "^7.2.0",
