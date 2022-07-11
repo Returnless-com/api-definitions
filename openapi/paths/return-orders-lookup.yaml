@@ -1,0 +1,25 @@
+get:
+  tags:
+    - Return Orders
+  summary: Return order lookup
+  operationId: ReturnOrdersLookup
+  description: >
+    Look up a return order by the given tracking code.
+  parameters:
+    - name: tracking_number
+      in: query
+      required: true
+      description: The tracking code for a shipment on a return order.
+      schema:
+        type: string
+  responses:
+    200:
+      description: Test
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/return-orders-lookup.yaml
+    '401':
+      $ref: ../components/responses/unauthorized.yaml
+    '404':
+      $ref: ../components/responses/not-found.yaml

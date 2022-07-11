@@ -20,8 +20,12 @@ security:
   - BearerAuth: []
 
 tags:
+  - name: Return Orders
   - name: Search
 
 paths:
+  /return-orders/lookup:
+    $ref: ./paths/return-orders-lookup.yaml
+
   /search:
     $ref: ./paths/search.yaml

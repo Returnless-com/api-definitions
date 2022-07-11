@@ -1,0 +1,19 @@
+type: object
+properties:
+  data:
+    type: object
+    properties:
+      id:
+        description: The customer identifier string.
+        readOnly: true
+        allOf:
+          - type: string
+            description: The resource ID.
+  updated_at:
+    description: The timestamp the resource is updated at.
+    type: string
+    format: timestamp
+  created_at:
+    description: The timestamp the resource is created at.
+    type: string
+    format: timestamp
